@@ -3,7 +3,6 @@ import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, Lin
 import { useStateContext } from '../context/ContextProvider';
 import { lineCustomSeries, LinePrimaryXAxis, LinePrimaryYAxis } from '../data/data';
 
-
 const LineChart = () => {
   const { currentMode } = useStateContext();
 

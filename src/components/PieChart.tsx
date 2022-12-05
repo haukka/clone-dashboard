@@ -2,8 +2,7 @@ import React from 'react';
 import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, AccumulationLegend, PieSeries, AccumulationDataLabel, Inject, AccumulationTooltip } from '@syncfusion/ej2-react-charts';
 import { useStateContext } from '../context/ContextProvider';
 
-
-const Doughnut = ({ id, data, legendVisiblity, height }: any) => {
+const PieChart = ({ id, data, legendVisiblity, height }: any) => {
   const { currentMode } = useStateContext();
   return (
     <AccumulationChartComponent
@@ -42,4 +41,4 @@ const Doughnut = ({ id, data, legendVisiblity, height }: any) => {
   );
 };
 
-export default Doughnut;
+export default PieChart;
