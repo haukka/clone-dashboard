@@ -1,8 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { MdOutlineCancel } from 'react-icons/md';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
 import { useStateContext } from '../context/ContextProvider';
 import { links } from '../data/data';
 
@@ -22,18 +19,6 @@ const Sidebar = () => {
     <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
       {activeMenu && (
         <>
-          <div className="flex justify-between items-center">
-            <TooltipComponent content="Menu" position="BottomCenter">
-              <button
-                type="button"
-                onClick={() => setActiveMenu(!activeMenu)}
-                style={{ color: color }}
-                className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
-              >
-                <MdOutlineCancel />
-              </button>
-            </TooltipComponent>
-          </div>
           <div className="mt-10 ">
             {links.map((item: any) => (
               <div key={item.title}>
